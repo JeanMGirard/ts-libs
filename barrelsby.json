@@ -1,0 +1,18 @@
+{
+  "location": "all",
+  "name": "index.ts",
+  "structure": "flat",
+  "delete": true,
+  "local":true,
+  "directory": [
+      "src"
+  ],
+  "include": [".ts$"],
+  "exclude": [
+    ".spec.ts$",
+    ".d.ts$",
+    "logs.ts$",
+    "server.ts$",
+    "browser.ts$"
+  ]
+}

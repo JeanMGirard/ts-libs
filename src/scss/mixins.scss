@@ -1,0 +1,83 @@
+// ==== FONTS ======================
+@mixin font-headers-1 {
+  font-family: "Cairo", sans-serif;
+}
+@mixin font-buttons-1 {
+  font-family: "Cairo", sans-serif;
+}
+@mixin font-labels-1 {
+  font-family: "Cairo", sans-serif;
+}
+
+// ==== MOUSE-EVENTS ======================
+@mixin select-discrete {
+  &::selection{
+    background: rgba(100,100,100,0.15);
+  }
+}
+@mixin select-hidden {
+  &::selection{
+    background: rgba(100,100,100,0);
+  }
+}
+@mixin select-none {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+
+// ==== DISPLAY & SIZING ======================
+@mixin absolute-full {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+@mixin no-padding-sides {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@mixin baseDimension {
+  padding: 0;
+  margin: 0;
+}
+// ==== SCROLLS ======================
+@mixin scroll-hidden {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+@mixin scroll-left   {
+  direction: rtl;
+  * {  direction: ltr;  }
+}
+@mixin scroll-discrete {
+  /* width */
+  &::-webkit-scrollbar {  width: 4px;  }
+  /* Track */
+  &::-webkit-scrollbar-track { background: #f1f1f1; }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {  background: #888; }
+  &::-webkit-scrollbar-thumb:hover {  background: #555; }
+}
+// ==== BORDERS ======================
+@mixin border-none {  border: 0 !important; }
+@mixin border-discrete { border: 1px solid rgb(245, 245, 245); }
+
+// ==== SHADOWS ======================
+
+// ==== OTHER ======================

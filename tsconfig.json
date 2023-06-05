@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "src/",
+    "lib": ["ES2018", "DOM"],
+    "sourceMap": true,
+    "allowJs": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "esModuleInterop": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "**/*.test.ts", 
+    "**/*.spec.ts", 
+    "node_modules",
+    "dist"
+  ],
+
+  "typedocOptions": {
+    "name": "@mws/libs",
+    "out": "docs",
+    "json": "docs/types.json",
+    "readme": "README.md",
+    "exclude": "**/*+(.spec|.e2e-spec).ts",
+    "includeVersion": true,
+    "hideGenerator": true,
+    "plugin": []
+  }
+}
