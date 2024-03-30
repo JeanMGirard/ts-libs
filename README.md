@@ -1,3 +1,3 @@
-# MWS TS-libs
+# TS libs
 
 
